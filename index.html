@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rüted</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#homePage">Rüted</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!--<li><a href="Login.html">Login</a></li>-->
+        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" type="button" class="btn btn-success" data-target="#myModal">Sign Up</button> 
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="id01" class="modal">
+  <!--start of modal-->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+    <h2><center>Sign Up</center></h2>
+    <hr>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" id= "closeMod">&times;</span>
+    </div>
+    <!--Modal-->
+    <!--Add Google Sign in here-->
+
+              <div class="container" id="SignUpPage">
+              <hr>
+                <label for="email" id="modalText"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw" id="modalText"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat" id="modalText"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                
+                <label id="modalText">
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p id="modalText">By creating an account you agree to our <a href="#" id="modalLink">Terms & Privacy</a>.</p>
+              </div>
+
+              <div class="container" id="SignUpPage" style="background-color:#0C1832">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <!--For Button to click through_____ onclick="document.getElementById('id01').style.display='none'" -->
+                <span class="psw">
+                <button type="button" class= "btn btn-success popup" id=SignUpBtn onclick="myPop()">Sign Up
+                    <span class="popuptext" id="myPopup">Coming Soon
+                </button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <!--end of modal-->
+
+<div class="jumbotron text-center" id="banner">
+  <h1><img src="banner.jpg"></h1>
+  <!--<p>Welcome</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>-->
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid bg-black" id = "banner">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 class="slideanim">About Rüted</h2><br>
+      <h4 class ="slideanim">Rüted covers the intersections of blockchain technology, money, and policy. Rüted's forward looking analysis and opinion pieces focus on blockchain technology and its' societal implications. Rüted is devoted to providing a fair, unaligned assessment of the most current and breaking news</h4><br>
+      <p class="slideanim"><a href="#contact">Follow us</a> for instant updates</p>
+      <br><!--<button class="btn btn-default btn-lg">Get in Touch</button>-->
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-bitcoin logo slideanim"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-blue">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2 class="slideanim">Our Values</h2><br>
+      <h4 class="slideanim">Rüted prides itself on getting to the root of breaking news. Our mission is to make more aware about blockhain technology its positives, potential and how it will shape our future </h4><br>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Blog Section) -->
+<div id="blog" class="container-fluid text-center">
+  <h2 class="slideanim">Blog</h2>
+  <h4 class="slideanim">Our Community</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-search logo-small"></span>
+      <h4>Coverage</h4>
+      <p>Follow the top news on blockchain</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-list-alt logo-small"></span>
+      <h4>Analysis</h4>
+      <p>See how cryptocurrencies have been doing</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-refresh logo-small"></span>
+      <h4>Constant Updates</h4>
+      <p>Constant updates on current news</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-default btn-lg">Sign Up</button></center>
+  </div>
+</div>
+
+<!-- Container (News Section) -->
+<div id="news" class="container-fluid text-center bg-blue">
+  <h2 class="slideanim">News</h2><br>
+  <h4 class="slideanim">Stay in Rüte</h4>
+  <div class="row text-center">
+    <a class="twitter-timeline bg-black" href="https://twitter.com/Ruted_IO?ref_src=twsrc%5Etfw" data-theme="dark" data-chrome="nofooter noborders transparent noscrollbar noheader" >Tweets by Ruted_IO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-blue">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Universal</p>
+      <p><span class="fa fa-twitter"></span> <a href=https://twitter.com/Ruted_IO target="_blank"> Twitter</a></p>
+      <p><span class="fa fa-facebook"></span> <a href=https://www.facebook.com/ruted.io/ target="_blank"> Facebook</a></p>
+      <p><span class="glyphicon glyphicon-envelope"></span> info@restoreindustries.co</p>
+      <p><span class="glyphicon glyphicon-bitcoin"></span> BTC: 1LvPQXH7vhHswuxVLwMsuZCV2pr2jVa4n7</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End of page-->
+
+<footer class="container-fluid text-center">
+  <a href="#homePage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up bg-black"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#homePage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+
+// When the user clicks on div, open the popup
+  function myPop() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+  }
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
