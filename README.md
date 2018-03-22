@@ -1,2 +1,2 @@
-# R-ted
+# Rüted
 Blogspot for Bloackchain tech
