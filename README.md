@@ -1,2 +1,2 @@
 # Rüted
-Blogspot for Bloackchain tech
+Blogspot for Blockchain technology
